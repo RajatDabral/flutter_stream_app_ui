@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (ctx) => DataModel(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Streaming App',
         theme: ThemeData(
           primarySwatch: Colors.blue,

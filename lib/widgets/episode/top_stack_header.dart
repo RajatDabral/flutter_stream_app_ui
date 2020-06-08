@@ -76,13 +76,14 @@ class TopStackHeader extends StatelessWidget {
           ),
         ),
         Positioned(
-          right: 20, 
+          right: 20,
           bottom: 80,
-            child: FaIcon(
-          FontAwesomeIcons.angleDown,
-          color: Colors.white,
-          size: 40,
-        )),
+          child: FaIcon(
+            FontAwesomeIcons.angleDown,
+            color: Colors.white,
+            size: 40,
+          ),
+        ),
       ],
     );
   }

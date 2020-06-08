@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:music_app_ui/data/data_model.dart';
 
 import 'package:provider/provider.dart';
@@ -51,6 +52,8 @@ class _ShowsPageScreenState extends State<ShowsPageScreen>
               headerSliverBuilder: (BuildContext context, bool boxIsScrolled) {
                 return <Widget>[
                   SliverAppBar(
+                    backgroundColor: Color(0xff101412),
+                    elevation: 0.0,
                     leading: IconButton(
                       icon: Icon(Icons.cancel),
                       onPressed: () {
@@ -62,10 +65,11 @@ class _ShowsPageScreenState extends State<ShowsPageScreen>
                         : Text(''),
                     pinned: true,
                     centerTitle: true,
-                    // floating: true,
                     expandedHeight: MediaQuery.of(context).size.height * 0.6,
-                    flexibleSpace: TopStackHeader(
-                        shows: shows, index: widget.index), //Header Stack
+                    flexibleSpace: FlexibleSpaceBar(
+                      background:
+                          TopStackHeader(shows: shows, index: widget.index),
+                    ), //Header Stack
                     bottom: TabBar(
                       controller: _tabController,
                       tabs: [
@@ -74,6 +78,18 @@ class _ShowsPageScreenState extends State<ShowsPageScreen>
                         Tab(text: 'Prizes'),
                       ],
                     ),
+                    actions: boxIsScrolled
+                        ? [
+                            Padding(
+                              padding: const EdgeInsets.all(14.0),
+                              child: FaIcon(
+                                FontAwesomeIcons.angleDown,
+                                color: Colors.white,
+                                // size: 40,
+                              ),
+                            )
+                          ]
+                        : [], //false condition
                   )
                 ];
               },
@@ -96,6 +112,7 @@ class _ShowsPageScreenState extends State<ShowsPageScreen>
     return [
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
         children: [
           DropButton(),
           SizedBox(height: 40),
