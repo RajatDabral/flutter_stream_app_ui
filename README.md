@@ -1,16 +1,15 @@
-# music_app_ui
+# flutter_stream_app_ui
 
-A new Flutter project.
+A Streaming application UI design in flutter.
 
-## Getting Started
+# Key Points:
 
-This project is a starting point for a Flutter application.
+Custom Page Route for Navgation. 
+Transparent BottomNavigationAppBar.
+NestedScrollView for Tabs & SliverAppBar.
+Smooth Transistions across widgets.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Coming up:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Animated Icons
