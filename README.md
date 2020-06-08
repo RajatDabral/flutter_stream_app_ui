@@ -13,3 +13,11 @@ Smooth Transistions across widgets.
 ## Coming up:
 
 Animated Icons
+
+## ScreeShots:
+
+![](screeshots/Screenshot_1591603524.png)  
+![](screeshots/Screenshot_1591603558.png)  
+![](screeshots/Screenshot_1591603563.png)  
+![](screeshots/Screenshot_1591603569.png)  
+
