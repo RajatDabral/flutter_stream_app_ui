@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_app_ui/screens/home_screen.dart';
+import 'package:music_app_ui/widgets/custom_icon.dart';
 
 class BottomNavigationPage extends StatefulWidget {
   @override
@@ -15,6 +16,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   ];
 
   int _selectedIndex = 0;
+  bool _isSelected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +36,12 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
         },
         items: [
           BottomNavigationBarItem(
+            activeIcon: CustomIcon(
+              child: Icon(
+                Icons.home,
+                size: 40,
+              ),
+            ),
             title: Text(''),
             icon: Icon(
               Icons.home,

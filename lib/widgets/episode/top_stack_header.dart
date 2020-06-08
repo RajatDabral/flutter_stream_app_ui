@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:music_app_ui/data/model/shows_model.dart';
 
 class TopStackHeader extends StatelessWidget {
@@ -23,7 +24,7 @@ class TopStackHeader extends StatelessWidget {
         Positioned(
           height: 100,
           left: 40,
-          bottom: 40,
+          bottom: 60,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -73,7 +74,16 @@ class TopStackHeader extends StatelessWidget {
               )
             ],
           ),
-        )
+        ),
+        Positioned(
+          right: 20,
+          bottom: 80,
+          child: FaIcon(
+            FontAwesomeIcons.angleDown,
+            color: Colors.white,
+            size: 40,
+          ),
+        ),
       ],
     );
   }

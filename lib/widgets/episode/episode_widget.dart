@@ -7,21 +7,23 @@ class EpisodeWidget extends StatelessWidget {
   Widget build(BuildContext ctx) {
     final maxHeight = MediaQuery.of(ctx).size.height * .45;
     final episode = Provider.of<DataModel>(ctx, listen: false).episodeList;
-    return Container(
-      height: MediaQuery.of(ctx).size.height,
-      child: ListView.builder(
-        itemCount: episode.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Column(
-            ///Main Column
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _buildEpisodeHeader(context, maxHeight, index),
-              SizedBox(height: 20),
-              _buildEpisodeBody(context, maxHeight, index),
-            ],
-          );
-        },
+    return Expanded(
+      child: Container(
+        height: MediaQuery.of(ctx).size.height,
+        child: ListView.builder(
+          itemCount: episode.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Column(
+              ///Main Column
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildEpisodeHeader(context, maxHeight, index),
+                SizedBox(height: 20),
+                _buildEpisodeBody(context, maxHeight, index),
+              ],
+            );
+          },
+        ),
       ),
     );
   }
