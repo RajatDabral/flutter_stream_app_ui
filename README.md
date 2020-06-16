@@ -16,8 +16,18 @@ Animated Icons
 
 ## ScreeShots:
 
-![](screeshots/Screenshot_1591603524.png)  
-![](screeshots/Screenshot_1591603558.png)  
-![](screeshots/Screenshot_1591603563.png)  
-![](screeshots/Screenshot_1591603569.png)  
+### Screen 1:
 
+<img src="screenshots/Screenshot_1591603524.png" width= 350 height= 650>
+
+### Screen 2:
+
+<img src="screenshots/Screenshot_1591603558.png" width= 350 height= 650>
+
+### Screen 3:
+
+<img src="screenshots/Screenshot_1591603563.png" width= 350 height= 650>
+
+### Screen 4:
+
+<img src="screenshots/Screenshot_1591603569.png" width= 350 height= 650>
